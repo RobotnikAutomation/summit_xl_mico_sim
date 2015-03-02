@@ -5,4 +5,4 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/summit_xl_mico.srdf
   CONFIG:
-    generated_timestamp: 1425163301
+    generated_timestamp: 1425326915

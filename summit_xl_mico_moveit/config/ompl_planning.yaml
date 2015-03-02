@@ -34,7 +34,7 @@ arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(j1,j2)
+  projection_evaluator: joints(mico_joint_1,mico_joint_2)
   longest_valid_segment_fraction: 0.05
 gripper:
   planner_configs:
@@ -49,5 +49,5 @@ gripper:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
-  projection_evaluator: joints(jf1,jf2)
+  projection_evaluator: joints(mico_joint_finger_1,mico_joint_finger_2)
   longest_valid_segment_fraction: 0.05

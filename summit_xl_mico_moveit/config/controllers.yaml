@@ -4,10 +4,10 @@ controller_list:
     type: FollowJointTrajectory
     default: true
     joints:
-      - j1
-      - j1
-      - j2
-      - j3
-      - j4
-      - j5
-      - j6
+      - mico_joint_1
+      - mico_joint_2
+      - mico_joint_3
+      - mico_joint_4
+      - mico_joint_5
+      - mico_joint_6
+

@@ -1,13 +1,13 @@
 controller_list:
   - name: fake_arm_controller
     joints:
-      - j1
-      - j2
-      - j3
-      - j4
-      - j5
-      - j6
+      - mico_joint_1
+      - mico_joint_2
+      - mico_joint_3
+      - mico_joint_4
+      - mico_joint_5
+      - mico_joint_6
   - name: fake_gripper_controller
     joints:
-      - jf1
-      - jf2
+      - mico_joint_finger_1
+      - mico_joint_finger_2
