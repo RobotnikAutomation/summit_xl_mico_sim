@@ -1,8 +1,0 @@
-moveit_setup_assistant_config:
-  URDF:
-    package: summit_xl_mico_description
-    relative_path: robots/summit_xl_mico.urdf.xacro
-  SRDF:
-    relative_path: config/summit_xl_mico.srdf
-  CONFIG:
-    generated_timestamp: 1425638734
