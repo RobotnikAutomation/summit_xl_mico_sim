@@ -48,17 +48,17 @@ summit_xl_mico:
   j4_position_controller:
     type: effort_controllers/JointPositionController
     joint: mico_joint_4
-    pid: {p: 100.0, i: 20, d: 5.0}
+    pid: {p: 200.0, i: 20, d: 5.0}
 
   j5_position_controller:
     type: effort_controllers/JointPositionController
     joint: mico_joint_5
-    pid: {p: 100.0, i: 15, d: 0.0}
+    pid: {p: 200.0, i: 15, d: 0.0}
 
   jhand_position_controller:
     type: effort_controllers/JointPositionController
     joint: mico_joint_6
-    pid: {p: 100.0, i: 10, d: 1.0}
+    pid: {p: 200.0, i: 10, d: 1.0}
 
   jf1_position_controller:
     type: effort_controllers/JointPositionController
