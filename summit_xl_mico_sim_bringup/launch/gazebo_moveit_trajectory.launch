@@ -6,7 +6,15 @@
   
   <!-- summit_xl_mico gazebo -->
   <include file="$(find summit_xl_mico_gazebo)/launch/summit_xl_mico.launch" />
-  
+
+  <!-- start joystick -->
+  <include file="$(find summit_xl_pad)/launch/summit_xl_pad.launch"/>
+
+  <!-- summit_xl_robot_control will provide control for the PTZ camera and the height of the Summit-X robot -->
+  <!-- only if ptz camera mounted -->
+  <!-- include file="$(find summit_xl_robot_control)/launch/summit_xl_robot_control.launch"/ -->
+
+
   <!-- robotnik trajectory control -->
   <include file="$(find summit_xl_mico_sim_bringup)/launch/robotnik_traj_control/gazebo_trajectory_control.launch" />
   
