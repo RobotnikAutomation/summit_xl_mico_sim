@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
 <launch>
 	<arg name="j1_pos" value="0.0"/>
-	<arg name="j2_pos" value="0.0"/>
+	<arg name="j2_pos" value="-0.75"/>
 	<arg name="j3_pos" value="0.0"/>
 	<arg name="j4_pos" value="0.0"/>
 	<arg name="j5_pos" value="0.0"/>
-	<arg name="j6_pos" value="0.0"/>
+	<arg name="j6_pos" value="3.4"/>
 	<arg name="jf1_pos" value="-1.0"/>
 	<arg name="jf2_pos" value="-1.0"/>
+	<arg name="jf3_pos" value="-1.0"/>
 	<arg name="pub_options" value="--once"/>
   <!-- Sets the joint value of the following joints -->
   
@@ -44,6 +45,9 @@
     output="screen"  args="pub /summit_xl_mico/jg2_position_controller/command std_msgs/Float64 'data: $(arg jf2_pos)' $(arg pub_options)"
    />
 
+  <node name="initial_position_jf3" pkg="rostopic" type="rostopic" respawn="false"
+    output="screen"  args="pub /summit_xl_mico/jg3_position_controller/command std_msgs/Float64 'data: $(arg jf3_pos)' $(arg pub_options)"
+   />
 
 </launch>
 
